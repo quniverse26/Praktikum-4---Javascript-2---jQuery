@@ -1,0 +1,28 @@
+<html>
+<head>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript">
+	</script>
+	<style type="text/css">
+		#container{
+			height: 400px;
+			width: 400px;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div id="container"></div>
+	<br>
+	<button id="button"> Click me! </button>
+	<script type="text/javascript">
+		let colors = ['red', 'blue', 'pink', 'green', 'purple'];
+		let button = document.getElementById('button');
+		button.addEventListener('click', function(){
+			var randomColor = colors[Math.floor(Math.random() * colors.length)]
+			let container = document.getElementById('container');
+			container.style.background = randomColor;
+		})
+	</script>
+</body>
+</html>

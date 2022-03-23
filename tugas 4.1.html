@@ -1,0 +1,35 @@
+<html>
+<head>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".sembunyi1").click(function(){
+				$("#foto1").hide("slow")
+			});
+			$(".tampil1").click(function(){
+				$("#foto1").show("slow")
+			});
+		});
+		$(document).ready(function(){
+			$(".sembunyi2").click(function(){
+				$("#foto2").hide("slow")
+			});
+			$(".tampil2").click(function(){
+				$("#foto2").show("slow")
+			});
+		});
+	</script>
+</head>
+<body>
+	<button class="sembunyi1"> Sembunyikan </button>
+	<button class="tampil1"> Tampilkan </button>
+	<br>
+	<br>
+	<button class="sembunyi2"> Sembunyikan </button>
+	<button class="tampil2"> Tampilkan </button>
+	<p>
+		<img id="foto1" src="gambar1.jpg" width="500px" height="500px" align="left">
+		<img id="foto2" src="gambar2.jpg" width="500px" height="500px" align="right">
+	</p>
+</body>
+</html>
